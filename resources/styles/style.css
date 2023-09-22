@@ -1,0 +1,82 @@
+.doc-text{
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.main-title{
+    font-size: 64px;
+    color: #1F3F68
+}
+
+.contact-title{
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center
+}
+
+.sub{
+    font-weight: bolder;
+    font-size: 36px
+}
+
+.sub-sub{
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.inputs{
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.button-submit{
+    background: rgb(148,0,199);
+    background: linear-gradient(90deg, #cbb26a 0%, #be9e44 50%, #d8c690 100%);
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    border: 0;
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase
+}
+
+.feedback-form{
+    width: 350px;
+    background: url("../imgs/form-background.png");
+}
+
+.breadcrumbs{
+    justify-items: start;
+    background-color: #be9e44;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs-item {
+    background: #be9e44;
+
+    display: inline-grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+
+    border-right-style: solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: #FFFFFF;
+}
+
+
+.breadcrumbs-link{
+    place-content: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
