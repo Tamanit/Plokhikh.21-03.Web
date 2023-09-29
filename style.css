@@ -12,9 +12,11 @@ header{
     position:fixed;
     background-color: transparent;
     height: 104px;
-    display: grid;
-    grid-template-columns:108px 1fr 208px ;
-    grid-template-rows: 1fr 56px 1fr;
+    margin: 56px 208px 0 108px;
+}
+
+.menu-bar{
+    display: none;
 }
 
 .header-block
@@ -32,14 +34,14 @@ header{
     grid-template-columns: repeat(1124, 1px);
     align-items: center;
 
-    box-shadow: 0px 2px 4px 0px #00000014;
+    box-shadow: 0 2px 4px 0 #00000014;
 
 }
 
 .header-logo{
     grid-column: 24 / span 120;
     color: #2D66EE;
-    font-family: Inter;
+    font-family: Inter, serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 18px;
@@ -92,7 +94,7 @@ header{
 }
 
 .header-text{
-    font-family: SF Pro Text;
+    font-family: SF Pro Text, serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
@@ -102,7 +104,7 @@ header{
 }
 
 .header-link{
-    font-family: SF Pro Text;
+    font-family: SF Pro Text, serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
@@ -127,7 +129,7 @@ footer{
     height: 222px;
     border-radius: 12px;
 
-    box-shadow: 0px 2px 24px 0px #00000014, 0px 0px 2px 0px #00000014;
+    box-shadow: 0 2px 24px 0 #00000014, 0 0 2px 0px #00000014;
 
     display: flex;
     flex-direction: column;
@@ -238,7 +240,6 @@ footer{
 
     width: 600px;
     height: 220px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -486,6 +487,243 @@ footer{
     gap: 12px;
 }
 
-@media all and (max-width: 768px) {
-    
+@media (max-width: 768px){
+    header{
+        height: 122px;
+        width: 768px;
+
+        margin: 16px 0;
+    }
+
+    .header-block{
+        display: grid;
+        grid-template: 1fr / 59px 233px 120px 118px 24px 8px 142px ;
+        align-items: center;
+        width: 768px;
+        height: 90px;
+        padding: 25px 32px;
+
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .header-logo{
+        grid-area: 1 / 3;
+    }
+
+    .header-text{
+        display: none;
+    }
+    .header-phone-link-img{
+        display: none;
+    }
+
+    .header-phone-1{
+        display: none;
+    }
+
+    .header-phone-2{
+        display: none;
+    }
+
+    .menu-bar{
+        grid-area: 1 / 1;
+        display: block;
+    }
+
+    .header-email-link-img{
+        grid-area: 1 / 5;
+    }
+
+    .header-email-link{
+        grid-area: 1/ 7
+    }
+
+    footer{
+        width: 767px;
+        height: 241px;
+    }
+
+    .footer-block{
+        width: 767px;
+        height: 241px;
+
+        padding: 46px 21px 37px 56px;
+
+        box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .footer-logo{
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px; /* 50% */
+        letter-spacing: -0.154px;
+    }
+
+    .footer-links-block{
+        width: 690px;
+        height: 54px;
+    }
+
+    .footer-sub-texts{
+        font-family: SF Pro Text;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px; /* 128.571% */
+        letter-spacing: -0.154px;
+    }
+
+    .footer-text{
+        font-family: SF Pro Text;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: -0.408px;
+    }
+
+    .label-text{
+        font-family: SF Pro Text;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 123.077% */
+        letter-spacing: -0.078px;
+    }
+
+    .first-screen{
+        width: 768px;
+        height: 762px;
+        background: transparent;
+
+        grid-template: 138px 204px 32px 356px 32px / 33px 1fr 353px ;
+    }
+
+    .inbox-container-first-screen-text{
+        width: 383px;
+        height: 204px;
+    }
+
+    .first-screen-main-label{
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 144%; /* 40.32px */
+        letter-spacing: 0.326px;
+    }
+
+    .inbox-container-first-screen-form{
+        width: 382px;
+        height: 356px;
+        padding: 32px;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.16), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .first-screen-form-label{
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.38px;
+
+        width: 295px;
+    }
+
+    .contaction-form{
+        grid-template: 16px 38px 32px 16px 38px 32px 40px / 1fr;
+    }
+
+    .phone-number-label{
+        grid-area: 1 / 1;
+    }
+
+    .form-phone-box{
+        grid-area: 2 / 1;
+        width: 224px;
+    }
+
+    .full-name-label{
+        grid-area: 4 / 1;
+    }
+
+    .form-FN-box{
+        grid-area: 5 / 1;
+        width: 224px;
+    }
+
+    .first-screen-form-button{
+        grid-area: 7 / 1;
+        width: 155px;
+        height: 40px;
+        padding: 11px 24px;
+    }
+
+    .second-screen{
+        height: 531px;
+        width: 768px;
+
+        padding: 32px 86px 35px 40px;
+
+        gap: 82px;
+    }
+
+    .description-navigation{
+        width: 321px;
+    }
+
+    .SS-label{
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 144%; /* 40.32px */
+        letter-spacing: 0.326px;
+    }
+
+    .SS-sub-label{
+        font-family: SF Pro Text;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 133.333% */
+        letter-spacing: -0.24px;
+    }
+
+    .SS-sub-label-theme{
+        font-family: SF Pro Text;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 120% */
+        letter-spacing: 0.38px;
+    }
+
+    .SS-text{
+        width: 277px;
+
+        font-family: SF Pro Text;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: -0.408px;
+    }
+
+    .list-of-links{
+        padding-top: 124px;
+
+        font-family: SF Pro Text;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 120% */
+        letter-spacing: 0.38px;
+    }
 }
