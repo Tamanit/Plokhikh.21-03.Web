@@ -1,0 +1,491 @@
+@import "src/assets/styles/global.css";
+@import "src/assets/styles/fonts.css";
+@import "src/assets/styles/utils.css";
+    
+
+body{
+    width: 1440px;
+    background-color: #F2F4F7;
+}
+
+header{
+    position:fixed;
+    background-color: transparent;
+    height: 104px;
+    display: grid;
+    grid-template-columns:108px 1fr 208px ;
+    grid-template-rows: 1fr 56px 1fr;
+}
+
+.header-block
+{
+    width: 1124px;
+    background-color: #FFFFFF;
+    height: 56px;
+    border-radius: 12px;
+
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1124, 1px);
+    align-items: center;
+
+    box-shadow: 0px 2px 4px 0px #00000014;
+
+}
+
+.header-logo{
+    grid-column: 24 / span 120;
+    color: #2D66EE;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.15399999916553497px;
+    text-align: left;
+
+
+    width: 120px;
+    height: 24px;
+}
+
+.services{
+    grid-column: 224 / span 57;
+}
+
+.media{
+    grid-column: 305 / span 41;
+}
+
+.cases{
+    grid-column: 370 / span 41;
+}
+
+.faq{
+    grid-column: 435 / span 28;
+}
+
+.contacts{
+    grid-column: 487 / span 61;
+}
+
+.header-phone-link-img{
+    grid-column: 628 / span 24;
+}
+
+.header-phone-1{
+    grid-column: 660 / span 109;
+}
+
+.header-phone-2{
+    grid-column: 785 / span 109;
+}
+
+.header-email-link-img{
+    grid-column: 926 / span 24;
+}
+
+.header-email-link{
+    grid-column: 958 / span 142;
+}
+
+.header-text{
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.15399999916553497px;
+    text-align: left;
+
+}
+
+.header-link{
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.15399999916553497px;
+    text-align: left;
+    color: #2D66EE;
+}
+
+footer{
+    height: 318px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-block{
+    padding: 24px;
+    background-color: #101828;
+
+    width: 1224px;
+    height: 222px;
+    border-radius: 12px;
+
+    box-shadow: 0px 2px 24px 0px #00000014, 0px 0px 2px 0px #00000014;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo{
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.15399999916553497px;
+    text-align: left;
+
+    color: #FFFFFF;
+
+    width: 217px;
+    height: 24px;
+}
+
+.footer-links-block{
+    width: 1176px;
+    height: 54px;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.footer-sub-texts{
+
+    display: grid;
+    grid-template-columns: repeat(4,25px 1fr);
+    align-items: center;
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.label-bock{
+    width: 202.41px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-text{
+//styleName: SF Caption 1 Regular;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.07800000160932541px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.footer-sub-text{
+    color: #98A2B3;
+
+//styleName: SF Subhead Medium;
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.15399999916553497px;
+    text-align: left;
+}
+
+.footer-text{
+//styleName: SF Title 3 Semibold;
+    font-family: SF Pro Text;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.40799999237060547px;
+    text-align: left;
+
+    color: #ffffff;
+}
+
+.first-screen{
+    width: 100%;
+    height: 900px;
+
+    background: url("resources/imgs/background-thing.png") no-repeat right;
+
+    display: grid;
+    grid-template-columns: 108px 1fr 656px;
+    grid-template-rows: 160px 220px 64px 186px 270px;
+}
+
+.background-image-block{
+    width: 1440px;
+    height: 900px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inbox-container-first-screen-text{
+    grid-row: 2;
+    grid-column: 2;
+
+    width: 600px;
+    height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-screen-main-label{
+    display: inline;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.32645100355148315px;
+    text-align: left;
+    background: linear-gradient(90deg, rgba(16,24,40,1) 0%, rgba(16,24,40,1) 23%, rgba(48,111,245,1) 23%, rgba(48,111,245,1) 50%, rgba(16,24,40,1) 50%, rgba(16,24,40,1) 56%, rgba(48,111,245,1) 56%, rgba(48,111,245,1) 75%, rgba(16,24,40,1) 75%, rgba(16,24,40,1) 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inbox-container-first-screen-form{
+
+    height: 186px;
+    width: 676px;
+
+    grid-column: 2;
+    grid-row: 4;
+
+    background: #FFFFFF;
+    width: 676px;
+    height: 186px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 24px 0px #00000029, 0px 0px 2px 0px #00000014;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-screen-sub-label{
+//styleName: SF Text Medium;
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.23999999463558197px;
+    text-align: left;
+}
+
+.first-screen-form-label{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.3799999952316284px;
+    text-align: left;
+    color: #101828;
+
+    width: 600px;
+}
+
+.contaction-form{
+    display: grid;
+    grid-template-columns: 224px 224px 1fr;
+    column-gap: 24px;
+
+    grid-template-rows: 16px 38px;
+
+
+}
+
+.label-form{
+    color: #667085;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* SF Caption 1 Medium */
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 123.077% */
+    letter-spacing: -0.078px;
+}
+
+.phone-number-label{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.full-name-label{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.form-phone-box {
+    grid-area: 2 / 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-bottom: 0.7px #D0D5DD solid;
+    color: #101828;
+
+    font-family: SF Pro Text;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.40799999237060547px;
+    text-align: left;
+}
+.form-FN-box{
+    grid-area: 2 / 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-bottom: 0.7px #D0D5DD solid;
+    color: #101828;
+
+    font-family: SF Pro Text;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.40799999237060547px;
+    text-align: left;
+}
+
+.first-screen-form-button{
+    grid-area: 1 / 3 / span 2 / 3;
+    width: 132px;
+    height: 58px;
+
+    color: #FFFFFF;
+
+    background-color: #2D66EE;
+    padding: 11px 24px;
+    border-radius: 8px;
+
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.15399999916553497px;
+    text-align: left;
+}
+
+.second-screen{
+    height: 500px;
+    background-color: #ffffff;
+
+    padding:80px 365px 80px 108px;
+
+    display: flex;
+    gap: 128px;
+}
+
+.description-navigation{
+    display: flex;
+    flex-direction: column;
+}
+
+.SS-label{
+    color: #101828;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 144%; /* 51.84px */
+    letter-spacing: 0.326px;
+
+    width: 600px;
+
+    color: #101828;
+
+    margin-bottom: 32px;
+}
+
+.SS-sub-label{
+    color: #101828;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* SF Text Medium */
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 133.333% */
+    letter-spacing: -0.24px;
+
+    color: #101828;
+
+    margin-bottom: 34px;
+}
+
+.SS-sub-label-theme{
+    width: 496px;
+
+    color: #101828;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* SF Title 2 Semibold */
+    font-family: SF Pro Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.38px;
+
+    margin-bottom: 16px;
+}
+
+.SS-text{
+    color: #344054;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* SF Title 3 Regular */
+    font-family: SF Pro Text;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 129.412% */
+    letter-spacing: -0.408px;
+
+    width: 496px;;
+
+    margin-bottom: 32px;
+}
+
+.list-of-links{
+    color:  #1D2939;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* SF Title 2 Regular */
+    font-family: SF Pro Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.38px;
+}
+
+.links-block{
+    padding: 12px 0px;
+    gap: 12px;
+}
+
+@media all and (max-width: 768px) {
+    
+}

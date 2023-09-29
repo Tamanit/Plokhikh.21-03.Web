@@ -21,3 +21,10 @@
          url("/static/fonts/Inter-Regular.woff2") format("woff");
     font-weight: 400;
 }
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: local('SF Pro Text'), local('SF Pro Text-Regular'), local('SF Pro Text Regular'),
+    url("/static/fonts/SFProText-Regular.ttf") format("truetype");
+}
+
