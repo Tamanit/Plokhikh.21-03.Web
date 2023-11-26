@@ -1,0 +1,147 @@
+@import "../parameters"
+@import "fontParametrs"
+
+@keyframes slide-up
+  to
+    background-position-y: 1959px
+@keyframes slide-down
+  to
+    background-position-y: -1959px
+
+.first-screen-background
+  overflow: hidden
+  width: 100%
+  height: 900px
+  display: flex
+  flex-direction: row
+  justify-content: end
+  align-items: center
+  position: relative
+  z-index: 1
+
+  .left
+    height: 1100px
+    transform: rotate(-12deg)
+    width: 310.49px
+    background: url("../img/column-left.webp") center repeat-y
+    animation: slide-up 1s  linear infinite
+    animation-play-state: paused
+    animation-delay: calc(var(--scroll) * -1s)
+  animation-iteration-count: 1
+  animation-fill-mode: both
+
+  .right
+    height: 1100px
+    transform: rotate(-12deg)
+    width: 310.49px
+    animation: slide-down 1s linear infinite
+    animation-play-state: paused
+    animation-delay: calc(var(--scroll) * -1s)
+    animation-iteration-count: 1
+    animation-fill-mode: both
+    background: url("../img/column-right.webp") center repeat-y
+
+.first-screen
+  width: 100%
+  height: 900px
+  padding: 160px 656px 270px 108px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  z-index: 9
+  position: absolute
+  top: 0
+  left: 0
+
+  .text-block
+    width: 600px
+    height: 220px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    .label
+      display: inline
+      background: linear-gradient(90deg, rgba(16,24,40,1) 0%, rgba(16,24,40,1) 23%, rgba(48,111,245,1) 23%, rgba(48,111,245,1) 50%, rgba(16,24,40,1) 50%, rgba(16,24,40,1) 56%, rgba(48,111,245,1) 56%, rgba(48,111,245,1) 75%, rgba(16,24,40,1) 75%, rgba(16,24,40,1) 100%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      font: $text_fs_main
+      text-align: left
+      letter-spacing: 0.326px
+
+    .sub-label
+      font: $SF_text_medium
+      letter-spacing: -0.24px
+      text-align: left
+
+  .form
+    height: 186px
+    width: 676px
+    background: $white
+    border-radius: 12px
+    padding: 24px
+    box-shadow: 0 0 24px 0 #00000029, 0 0 2px 0 #00000014
+
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    .label-form
+      width: 600px
+      color: $gray_900
+      font: $text_fs_form_header
+      text-align: left
+      letter-spacing: 0.38px
+
+    .contaction-form
+      display: grid
+      grid-template-columns: 224px 224px 1fr
+      column-gap: 24px
+      grid-template-rows: 16px 38px
+
+    .phone-number-label
+      grid-area: 1 / 1
+      font: $SF-caption_1_medium
+      letter-spacing: -0.078px
+      color: $gray_500
+
+    .full-name-label
+      grid-area: 1 / 2
+      font: $SF-caption_1_medium
+      letter-spacing: -0.078px
+      color: $gray_500
+
+    .phone-box
+      grid-area: 2 / 1
+      display: flex
+      align-items: center
+      gap: 8px
+      color: $gray_900
+      border-bottom: 0.7px $gray_300 solid
+      font: $SF_title_3_regular
+      letter-spacing: -0.408px
+      text-align: left
+
+    .FN-box
+      grid-area: 2 / 2
+      display: flex
+      align-items: center
+      gap: 8px
+      border-bottom: 0.7px #D0D5DD solid
+      color: $gray_900
+
+      font: $SF_title_3_regular
+      letter-spacing: -0.408px
+      text-align: left
+
+    .form-button
+      grid-area: 1 / 3 / span 2 / 3
+      color: $white
+      width: 132px
+      height: 58px
+      background-color: $accent
+      padding: 11px 24px
+      border-radius: 8px
+      font: $SF_subhead_semibold
+      letter-spacing: -0.154px
+      text-align: left

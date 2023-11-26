@@ -1,0 +1,126 @@
+@import "fontParametrs"
+@import "../parameters"
+
+.our-projects
+  width: 1440px
+  height: 840px
+  background-color: $gray_100
+  padding: 60px 108px 63px 108px
+  display: grid
+  grid-template-columns: 600px 24px 177px 160px 207px 56px
+  grid-template-rows: 52px 24px 40px 40px 58px 40px 52px 32px 60px 40px 22px 40px 24px 40px 59px 40px 40px
+
+  .title
+    grid-area: 1 / 1
+    letter-spacing: 0.326px
+    font-feature-settings: 'clig' off, 'liga' off
+    color: $gray_900
+    font: $text_fs_main
+
+  .sub-title
+    grid-area: 3 / 1
+    color: $gray_900
+    font-feature-settings: 'clig' off, 'liga' off
+    letter-spacing: -0.24px
+    font: $SF_text_medium
+
+  .navigation
+    list-style-type: none
+    display: flex
+    grid-area: 5 / span 3
+    font-feature-settings: 'clig' off, 'liga' off
+    color: $gray_900
+    font: $SF_title_3_regular
+    letter-spacing: -0.408px
+
+    li
+      margin: 16px
+      text-align: center
+
+      &:hover
+        border-bottom: 2px $accent solid
+        margin-bottom: 14px
+
+  input
+    margin: 9px 0
+    grid-area: 5 / 5
+    height: 40px
+    width: 207px
+    font: $SF_subhead_semibold
+    font-feature-settings: 'clig' off, 'liga' off
+    color: $white
+    background-color: $accent
+    border-radius: 8px
+
+    &:active
+      background-color: $accent_low_opacity
+
+  .project-title
+    grid-area: 7 / 1
+    font: $text_fs_main
+    font-feature-settings: 'clig' off, 'liga' off
+    letter-spacing: 0.326px
+
+  .text
+    grid-area: 9 / 1
+    color: $gray_900
+    font: $SF_text_regular
+    letter-spacing: -0.24px
+
+  .sub-text
+    grid-row: 11
+    color: $gray_600
+    letter-spacing: -0.408px
+    font-feature-settings: 'clig' off, 'liga' off
+    font: $SF_title_3_regular
+
+    span
+      color: $accent
+
+  .categories
+    color: $gray_900
+    letter-spacing: -0.24px
+    font: $SF_text_regular
+    grid-row: 13
+    display: grid
+    align-items: center
+    grid-template-columns: 24px 8px 80px 32px 24px 8px 63px
+
+    .place-img
+      grid-column: 1
+
+    .place-text
+      grid-column: 3
+
+    .type-img
+      grid-column: 5
+
+    .type-text
+      grid-column: 7
+
+  .kpi
+    display: grid
+    grid-template: 35px 16px / 76px 128px
+    row-gap: 8px
+    column-gap: 48px
+    grid-row: 15
+
+    .subtext
+      color: $gray_500
+      letter-spacing: -0.078px
+      font: $SF_caption_1_regular
+
+    .digit
+      color: $gray_900
+      letter-spacing: 0.326px
+      font: $text_bigDigits
+
+
+
+  .download-button
+    grid-row: 17
+    display: flex
+    gap: 16px
+
+  .phones
+    grid-area: 7 / 3 / span 10 / span 4

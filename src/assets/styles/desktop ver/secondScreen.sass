@@ -1,0 +1,55 @@
+@import "../parameters"
+@import "fontParametrs"
+
+.second-screen
+  z-index: 20
+  height: 500px
+  background-color: $white
+  padding: 80px 365px 80px 108px
+  display: flex
+  gap: 128px
+
+  .description-navigation
+    display: flex
+    flex-direction: column
+
+    .label
+      color: $gray_900
+      font: $text_fs_main
+      letter-spacing: 0.326px
+      font-feature-settings: 'clig' off, 'liga' off
+      width: 600px
+      margin-bottom: 32px
+
+    .sub-label
+      color: $gray_900
+      font: $SF_text_medium
+      letter-spacing: -0.24px
+      font-feature-settings: 'clig' off, 'liga' off
+      margin-bottom: 34px
+
+    .sub-label-theme
+      width: 496px
+      color: $gray_900
+      font-feature-settings: 'clig' off, 'liga' off
+      font: $SF_title_3_semibold
+      letter-spacing: 0.38px
+      margin-bottom: 16px
+
+    .text
+      color: $gray_700
+      font-feature-settings: 'clig' off, 'liga' off
+      font: $SF_title_3_regular
+      letter-spacing: -0.408px
+      width: 496px
+      margin-bottom: 32px
+
+  .list-of-links
+    color: $gray_800
+    font-feature-settings: 'clig' off, 'liga' off
+    font: $SF_title_2_regular
+    letter-spacing: 0.38px
+
+    .links-block
+      padding: 12px 0
+      gap: 12px
