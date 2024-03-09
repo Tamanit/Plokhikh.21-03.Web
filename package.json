@@ -1,0 +1,14 @@
+{
+  "name": "plokhikh.21-03.web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "PizzaMaker.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "https://github.com/Tamanit/Plokhikh.21-03.Web.git"
+  },
+  "private": true
+}

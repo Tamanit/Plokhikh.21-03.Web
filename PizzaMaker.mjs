@@ -1,0 +1,23 @@
+import {Pizza} from "./Pizza.mjs";
+import {PizzaSize} from "./pizzaData.mjs";
+import {PizzaType} from "./pizzaData.mjs";
+import {Toppings} from "./pizzaData.mjs";
+
+let pizza = new Pizza(PizzaType.find(x=> x.name === 'Маргарита'), PizzaSize.find(x=> x.name === 'Большая' ));
+console.log(pizza.calculatePrice);
+console.log(pizza.calculateCalorie);
+pizza.addTopping = Toppings.find(x => x.name === 'Cырный борт');
+console.log(pizza.getToppings);
+pizza.addTopping = Toppings.find(x => x.name === 'Чедер и пармезан');
+pizza.addTopping = Toppings.find(x => x.name === 'Cливочная моцарелла');
+console.log(pizza.calculatePrice);
+console.log(pizza.calculateCalorie);
+console.log(pizza.getToppings);
+console.log(pizza.getSize);
+console.log(pizza.getType);
+pizza.removeTopping = Toppings.find(x => x.name === 'Cырный борт');
+console.log(pizza.calculatePrice);
+console.log(pizza.calculateCalorie);
+console.log(pizza.getToppings);
+console.log(pizza.getSize);
+console.log(pizza.getType);
